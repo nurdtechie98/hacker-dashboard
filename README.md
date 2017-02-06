@@ -1,5 +1,5 @@
 # hacker-dashboard
-The day of hacker dashboard for QHacks 2017. Here is a [walkthrough](https://www.youtube.com/watch?v=BdvwEScrYTo).
+The day of hacker dashboard for QHacks 2017. Here is a [walkthrough video](https://www.youtube.com/watch?v=BdvwEScrYTo) or [example from QHacks](https://qhacks.github.io/hacker-dashboard/).
 
 
 ![Example hacker dashboard](./img/demo.png "Example hacker dashboard")
