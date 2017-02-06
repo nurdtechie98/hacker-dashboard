@@ -1,5 +1,9 @@
 # hacker-dashboard
-The day of hacker dashboard for QHacks 2017.
+The day of hacker dashboard for QHacks 2017. Here is a [walkthrough](https://www.youtube.com/watch?v=BdvwEScrYTo).
+
+
+![Example hacker dashboard](./img/demo.png "Example hacker dashboard")
+
 
 
 ## Deploying
@@ -21,7 +25,7 @@ It's pretty simple, update the data in `/js/main/data.js`. This file contains:
 - Wifi Information
 
 
-This dashboard can also be found with Github Pages. You have to update your DNS for your domain and add a "A" record, make the name to be "@" and point to "192.30.252.153". Add another record for CNAME, make the name to be "www" and point to "REPO_NAME". REPO_NAME would be the Github pages link (Ex. kweaver00.github.io)
+This dashboard can also be found with Github Pages. You have to update your DNS for your domain and add a "A" record, make the name to be "@" and point to "192.30.252.153". Add another record for CNAME, make the name to be "www" and point to "REPO_NAME". REPO_NAME would be the Github pages link (Ex. kweaver00.github.io). Also update the CNAME file in this repo to your domain or subdomain.
 
 
 
