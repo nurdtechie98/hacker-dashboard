@@ -10,7 +10,7 @@ var logoLink = "https://imgur.com/TmW50im.png";
 var slackLink = "";
 var fbGroupLink = "";
 var devPostLink = "";
-var helpqLink = "http://help.qhacks.io/";
+var helpqLink = "";
 
 
 var linkToHardware = "";
@@ -38,25 +38,20 @@ var campusSecurityInfo = [
 
 var quickLinks = [
 	{
-		"name" : "Slack",
-		"about" : "Chat with fellow hackers, mentors, and exec.",
-		"link" : "https://qhacks17.slack.com"
+		"name" : "KJSCE-HACK",
+		"about" : "Main Website Of Hackathon",
+		"link" : "http://kjsce-hackathon.tech/"
 	},
 	{
-		"name" : "Slack Sign Up",
-		"about" : "Sign up to use our Slack channel.",
-		"link" : "https://qhacks-slack.herokuapp.com/"
+		"name" : "KJSCE-abhiyantriki",
+		"about" : "Official Fest Page",
+		"link" : "http://kjsce-abhiyantriki.org/"
 	},
 	{
-		"name" : "QHacks 2017 DevPost",
-		"about" : "A list of awards and a spot for submissions.",
-		"link" : "https://qhacks2017.devpost.com/"
+		"name" : "KJSCE-Codecell",
+		"about" : "Council Page",
+		"link" : "http://kjscecodecell.com/"
 	},
-	{
-		"name" : "HELPq",
-		"about" : "Connect and get help from mentors.",
-		"link" : "http://help.qhacks.io/"
-	}
 ];
 
 var schedule = [
@@ -175,15 +170,15 @@ var schedule = [
 ];
 var qhacksExecSlack = [
 	{
-		"name" : "Hackathon Website",
+		"name" : "Chaitya",
 		"link" : "https://kjsce-hackathon.tech"
 	},
 	{
-		"name" : "KJSCE-Codecell",
+		"name" : "Vinitra",
 		"link" : "https://http://kjscecodecell.com"
 	},
 	{
-		"name" : "Abhiyantriki",
+		"name" : "Shaundarya",
 		"link" : "https://http://kjsce-abhiyantriki.org"
 	},
 ];

@@ -36,10 +36,9 @@
 	color: #848484;
 }
 .quick-link-text-title:hover{
-	text-decoration: none;
 }
 .quick-link-text-about{
-	font-size: 12px;
+	font-size: 14px;
 	font-family: 'Lato', sans-serif;
 
 	padding-left: 2px;

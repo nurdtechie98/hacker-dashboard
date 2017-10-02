@@ -59,7 +59,7 @@ $(document).ready(function(){
 	/*
 	 * Campus Security
 	 */
-	var campusSecurityHTML = '<h2 class="wifi-title">Contacting Campus Security</h2>';
+	var campusSecurityHTML = '<h2 class="wifi-title">Contacting Us:</h2>';
 	for(var i = 0;i < campusSecurityInfo.length;i++){
 		var cs = campusSecurityInfo[i];
 		if(cs != null && cs.preText != null && cs.preText.length > 0 && cs.contactNumberOrEmail != null && cs.contactNumberOrEmail.length > 0){
