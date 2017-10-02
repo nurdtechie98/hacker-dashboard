@@ -51,11 +51,11 @@ $(document).ready(function(){
 				}
 			quickLinksHTML += '</div>';
 		quickLinksHTML += '</a>';
-		
+
 	}
 	quickLinksHTML += '<br/>';
 	$("#quick-links-area").html(quickLinksHTML);
-	
+
 	/*
 	 * Campus Security
 	 */

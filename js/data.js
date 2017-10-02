@@ -1,37 +1,37 @@
-var eventName = "QHacks";
-var endDateTime = { year: 2017, month: 2, day: 7, hour: 10, minute: 0 };
-var introductionText = 'Welcome to the hacker dashboard! We hope you\'ll have a fantastic weekend of hacking here at Queen\'s University! We have added a bunch of information on this page. We will also continue to update this page with relevant information and links through the weekend.<br/><br/>Sign up to use the Slack here: <a href="https://qhacks-slack.herokuapp.com/" target="_blank">https://qhacks-slack.herokuapp.com/</a>';
+var eventName = "KJSCE-HACK";
+var endDateTime = { year:2017,month:10,day:7, hour:15,minute:0};
+var introductionText = 'Welcome to the KJSCE-HACK dashboard! We hope you\'ll have fantastic coiple of days of hacking here at KJ Somaiya College Of Engineering! We have added a bunch of information on this page. We will also continue to update this page with relevant information and links throughut the event.<br/><br/>Sign up to use the Slack here: <a href="https://qhacks-slack.herokuapp.com/" target="_blank">https://qhacks-slack.herokuapp.com/</a>';
 /*
  * Navbar links
- * 
+ *
  * If the variable link is blank, it wont show up in the navbar.
  */
-var logoLink = "http://qhacks.io/img/logo.png";
-var slackLink = "https://qhacks17.slack.com/";
-var fbGroupLink = "https://www.facebook.com/groups/1317363491653433/";
-var devPostLink = "https://qhacks2017.devpost.com/";
+var logoLink = "https://imgur.com/TmW50im.png";
+var slackLink = "";
+var fbGroupLink = "";
+var devPostLink = "";
 var helpqLink = "http://help.qhacks.io/";
 
 
-var linkToHardware = "http://qhacks.io/hardware/";
-var linkToChallenges = "http://qhacks.io/challenges/";
+var linkToHardware = "";
+var linkToChallenges = "";
 
 
-var rulesContent = '<p>We expect all hackers to abide by the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">MLH Code of Conduct</a>.</p><p>There will be a maximum of 4 members on each team.</p><br/>';
+var rulesContent = '<p>We expect all hackers to abide by the Code of Conduct and maintain discpline in the premises</p><p>There will be a maximum of 5 members on each team.</p><br/>';
 
 var wifiInfo = {
-	"networkName" : "QueensuSecure_WPA2",
+	"networkName" : "Somaiya",
 	"username" : "confgues",
 	"password" : "VbXt2%xp44"
 }
 
 var campusSecurityInfo = [
 	{
-		"preText" : "For general inquires: ",
+		"preText" : "Chaitya: ",
 		"contactNumberOrEmail" : "613-533-6733"
 	},
 	{
-		"preText" : "For emergencies only: ",
+		"preText" : "Vinitra: ",
 		"contactNumberOrEmail" : "613-533-6111"
 	}
 ];
@@ -61,239 +61,129 @@ var quickLinks = [
 
 var schedule = [
 	{
-		"name" : "Registration & Dinner",
-		"location" : "Dunning Hall",
-		"eventEndTime" : "02-05-2017 21:05:00",
-		"timeDisplayed" : "6:00 PM",
-		"dateDisplayed" : "Friday Feb 3"
+		"name" : "Checkin",
+		"location" : "KJSCE B building",
+		"eventEndTime" : "10-06-2017 10:00:00",
+		"timeDisplayed" : "9:00 AM",
+		"dateDisplayed" : "Friday Oct 6"
 	},
 	{
-		"name" : "Opening Ceremony",
-		"location" : "Dunning Hall",
-		"eventEndTime" : "02-05-2017 22:05:00",
-		"timeDisplayed" : "8:00 PM",
-		"dateDisplayed" : "Friday Feb 3"
-	},
-	{
-		"name" : "Team Formation",
-		"location" : "Dunning Hall",
-		"eventEndTime" : "02-05-2017 22:35:00",
-		"timeDisplayed" : "10:00 PM",
-		"dateDisplayed" : "Friday Feb 3"
+		"name" : "Kick-Off",
+		"location" : "Seminar-Hall B-507",
+		"eventEndTime" : "10-06-2017 10:30:00",
+		"timeDisplayed" : "9:30 AM",
+		"dateDisplayed" : "Friday Oct 6"
 	},
 	{
 		"name" : "Hacking Begins!",
-		"location" : "Ellis Hall & Jeffrey Hall",
-		"eventEndTime" : "02-05-2017 22:35:00",
-		"timeDisplayed" : "10:30 PM",
-		"dateDisplayed" : "Friday Feb 3"
-	},
-	{
-		"name" : "RBC: Design Thinking",
-		"location" : "327 Ellis Hall",
-		"eventEndTime" : "02-06-2017 00:35:00",
-		"timeDisplayed" : "11:30 PM",
-		"dateDisplayed" : "Friday Feb 3"
-	},
-	{
-		"name" : "Quiet Rooms/Sleeping Area (Optional)",
-		"location" : "319 Ellis Hall & 234 Jeffrey Hall",
-		"eventEndTime" : "02-06-2017 7:35:00",
-		"timeDisplayed" : "",
-		"dateDisplayed" : "Saturday Feb 4"
-	},
-	{
-		"name" : "Ratehub: Web Widgets with React and Webpack",
-		"location" : "327 Ellis Hall",
-		"eventEndTime" : "02-06-2017 1:35:00",
-		"timeDisplayed" : "12:30am",
-		"dateDisplayed" : "Saturday Feb 4"
-	},
-	{
-		"name" : "Mobile App Development at TD",
-		"location" : "327 Ellis Hall",
-		"eventEndTime" : "02-06-2017 2:35:00",
-		"timeDisplayed" : "1:30am",
-		"dateDisplayed" : "Saturday Feb 4"
-	},
-	{
-		"name" : "Breakfast",
-		"location" : "Ellis Hall Auditorium",
-		"eventEndTime" : "02-06-2017 09:05:00",
-		"timeDisplayed" : "8:00 AM",
-		"dateDisplayed" : "Saturday Feb 4"
-	},
-	{
-		"name" : "Yoga",
-		"location" : "319 Ellis Hall",
-		"eventEndTime" : "02-06-2017 11:05:00",
-		"timeDisplayed" : "10:00 AM",
-		"dateDisplayed" : "Saturday Feb 4"
-	},
-	{
-		"name" : "Scrambled Scripts",
-		"location" : "327 Ellis Hall",
-		"eventEndTime" : "02-06-2017 12:05:00",
-		"timeDisplayed" : "11:00 AM",
-		"dateDisplayed" : "Saturday Feb 4"
-	},
-	{
-		"name" : "Lunch",
-		"location" : "Ellis Hall Auditorium",
-		"eventEndTime" : "02-06-2017 13:05:00",
-		"timeDisplayed" : "12:00 PM",
-		"dateDisplayed" : "Saturday Feb 4"
-	},
-
-	{
-		"name" : "Afraj Gill: Most Common Mistakes by Founders, and How to Avoid Them",
-		"location" : "327 Ellis Hall",
-		"eventEndTime" : "02-06-2017 16:05:00",
-		"timeDisplayed" : "3:00 PM",
-		"dateDisplayed" : "Saturday Feb 4"
-	},
-	{
-		"name" : "Mini-Event: Lost in the Sauce Coding Challenge",
-		"location" : "327 Ellis Hall",
-		"eventEndTime" : "02-06-2017 17:05:00",
-		"timeDisplayed" : "4:00 PM",
-		"dateDisplayed" : "Saturday Feb 4"
-	},
-	{
-		"name" : "Dinner",
-		"location" : "Leonard Hall Cafe",
-		"eventEndTime" : "02-06-2017 18:05:00",
-		"timeDisplayed" : "6:00 PM",
-		"dateDisplayed" : "Saturday Feb 4"
-	},
-	{
-		"name" : "Microsoft: Intro to Microsoft Azure",
-		"location" : "327 Ellis Hall",
-		"eventEndTime" : "02-06-2017 21:35:00",
-		"timeDisplayed" : "8:30 PM",
-		"dateDisplayed" : "Saturday Feb 4"
-	},
-	{
-		"name" : "Lani Labs: The Internet Of Things",
-		"location" : "327 Ellis Hall",
-		"eventEndTime" : "02-06-2017 22:05:00",
-		"timeDisplayed" : "9:30 PM",
-		"dateDisplayed" : "Saturday Feb 4"
-	},
-	{
-		"name" : "Mosaic Manufacturing: Intro to 3D Printing",
-		"location" : "327 Ellis Hall",
-		"eventEndTime" : "02-06-2017 23:35:00",
-		"timeDisplayed" : "10:30 PM",
-		"dateDisplayed" : "Saturday Feb 4"
-	},
-	{
-		"name" : "Mini Event: Cup Stack",
-		"location" : "Jeffrey Basement",
-		"eventEndTime" : "02-07-2017 01:35:00",
-		"timeDisplayed" : "10:30 PM",
-		"dateDisplayed" : "Saturday Feb 5"
-	},
-	{
-		"name" : "Quiet Rooms/Sleeping Area (Optional)",
-		"location" : "319 Ellis Hall & 234 Jeffrey Hall",
-		"eventEndTime" : "02-07-2017 7:35:00",
-		"timeDisplayed" : "",
-		"dateDisplayed" : "Saturday Feb 5"
-	},
-	
-	{
-		"name" : "Breakfast",
-		"location" : "Ellis Hall Auditorium",
-		"eventEndTime" : "02-07-2017 09:05:00",
-		"timeDisplayed" : "8:00 PM",
-		"dateDisplayed" : "Sunday Feb 5"
-	},
-	{
-		"name" : "Hacking Ends",
-		"location" : "",
-		"eventEndTime" : "02-07-2017 11:05:00",
-		"timeDisplayed" : "10:00 AM",
-		"dateDisplayed" : "Sunday Feb 5"
-	},
-	{
-		"name" : "Judging Expo Starts",
-		"location" : "",
-		"eventEndTime" : "02-07-2017 11:35:00",
+		"location" : "Seminar-Hall B-507",
+		"eventEndTime" : "10-06-2017 12:00:00",
 		"timeDisplayed" : "10:30 AM",
-		"dateDisplayed" : "Sunday Feb 5"
+		"dateDisplayed" : "Friday Oct 6"
+	},
+	{
+		"name" : "Lunch Time!",
+		"location" : "Canteen",
+		"eventEndTime" : "10-06-2017 01:00:00",
+		"timeDisplayed" : "12:00 PM",
+		"dateDisplayed" : "Friday Oct 6"
+	},
+	{
+		"name" : "Hacking Period 2",
+		"location" : "Seminar-Hall B-507",
+		"eventEndTime" : "10-06-2017 17:00:00",
+		"timeDisplayed" : "1:00 PM",
+		"dateDisplayed" : "Friday Oct 6"
+	},
+	{
+		"name" : "Evening Snack Time",
+		"location" : "Canteen",
+		"eventEndTime" : "10-06-2017 18:00:00",
+		"timeDisplayed" : "5:00 PM",
+		"dateDisplayed" : "Friday Oct 6"
+	},
+	{
+		"name" : "Hacking Period 3",
+		"location" : "Seminar-Hall B-507",
+		"eventEndTime" : "10-06-2017 20:30:00",
+		"timeDisplayed" : "6:00 PM",
+		"dateDisplayed" : "Friday Oct 6"
+	},
+	{
+		"name" : "Dinner Time",
+		"location" : "Canteen",
+		"eventEndTime" : "10-06-2017 21:30:00",
+		"timeDisplayed" : "8:30 PM",
+		"dateDisplayed" : "Friday Oct 6"
+	},
+	{
+		"name" : "Hacking Period 4 / Checkout",
+		"location" : "Seminar-Hall B-507",
+		"eventEndTime" : "10-07-2017 09:00:00",
+		"timeDisplayed" : "9:00 AM",
+		"dateDisplayed" : "Friday Oct 7"
+	},
+	{
+		"name" : "Breakfast",
+		"location" : "Canteen",
+		"eventEndTime" : "10-07-2017 09:30:00",
+		"timeDisplayed" : "9:00 AM",
+		"dateDisplayed" : "Saturday Oct 8"
+	},
+	{
+		"name" : "Hacking Period 5",
+		"location" : "Seminar-Hall B-507",
+		"eventEndTime" : "10-07-2017 11:30:00",
+		"timeDisplayed" : "9:30 AM",
+		"dateDisplayed" : "Saturday Oct 8"
+	},
+	{
+		"name" : "Hacking Period Ends",
+		"location" : "Seminar-Hall B-507",
+		"eventEndTime" : "10-07-2017 11:45:00",
+		"timeDisplayed" : "11:30 AM",
+		"dateDisplayed" : "Saturday Oct 8"
 	},
 	{
 		"name" : "Lunch",
-		"location" : "Ellis Hall Auditorium",
-		"eventEndTime" : "02-07-2017 13:05:00",
+		"location" : "Canteen",
+		"eventEndTime" : "10-07-2017 13:00:00",
 		"timeDisplayed" : "12:00 PM",
-		"dateDisplayed" : "Sunday Feb 5"
+		"dateDisplayed" : "Saturday Oct 8"
 	},
 	{
-		"name" : "Closing Ceremony",
-		"location" : "Grant Hall",
-		"eventEndTime" : "02-07-2017 14:05:00",
-		"timeDisplayed" : "1:00 PM",
-		"dateDisplayed" : "Sunday Feb 5"
+		"name" : "Hack Presentation Submission",
+		"location" : "Seminar-Hall B-507",
+		"eventEndTime" : "10-07-2017 15:30:00",
+		"timeDisplayed" : "3:00 PM",
+		"dateDisplayed" : "Saturday Oct 8"
+	},
+	{
+		"name" : "Hack Presentation Judging",
+		"location" : "Seminar-Hall B-507",
+		"eventEndTime" : "10-07-2017 18:00:00",
+		"timeDisplayed" : "3:30 PM",
+		"dateDisplayed" : "Saturday Oct 8"
+	},
+	{
+		"name" : "Result Declaration",
+		"location" : "Seminar-Hall B-507",
+		"eventEndTime" : "10-07-2017 18:30:00",
+		"timeDisplayed" : "6:00 PM",
+		"dateDisplayed" : "Saturday Oct 8"
 	}
 ];
 var qhacksExecSlack = [
 	{
-		"name" : "Ask QHACKS Exec ",
-		"link" : "https://qhacks17.slack.com/messages/ask_qhacks/"
+		"name" : "Hackathon Website",
+		"link" : "https://kjsce-hackathon.tech"
 	},
 	{
-		"name" : "keith",
-		"link" : "https://qhacks17.slack.com/messages/@keith/"
+		"name" : "KJSCE-Codecell",
+		"link" : "https://http://kjscecodecell.com"
 	},
 	{
-		"name" : "enoch",
-		"link" : "https://qhacks17.slack.com/messages/@enoch/"
+		"name" : "Abhiyantriki",
+		"link" : "https://http://kjsce-abhiyantriki.org"
 	},
-	{
-		"name" : "stefan",
-		"link" : "https://qhacks17.slack.com/messages/@stefan"
-	},
-	{
-		"name" : "melilif",
-		"link" : "https://qhacks17.slack.com/messages/@melilif/"
-	},
-	{
-		"name" : "alex",
-		"link" : "https://qhacks17.slack.com/messages/@alexadusei/"
-	},
-	{
-		"name" : "sal",
-		"link" : "https://qhacks17.slack.com/messages/@salchoueib"
-	},
-	{
-		"name" : "fitz",
-		"link" : "https://qhacks17.slack.com/messages/@fitz/"
-	},
-	{
-		"name" : "jacob",
-		"link" : "https://qhacks17.slack.com/messages/@jacobriha/"
-	},
-	{
-		"name" : "temi",
-		"link" : "https://qhacks17.slack.com/messages/@temi/"
-	},
-	{
-		"name" : "graham",
-		"link" : "https://qhacks17.slack.com/messages/@graham/"
-	},
-	{
-		"name" : "april",
-		"link" : "https://qhacks17.slack.com/messages/@aprilye/"
-	},
-	{
-		"name" : "nicole",
-		"link" : "https://qhacks17.slack.com/messages/@nicole/"
-	}
-	,
-	{
-		"name" : "kamil",
-		"link" : "https://qhacks17.slack.com/messages/@kamil/"
-	}
 ];
